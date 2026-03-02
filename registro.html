@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Transacción</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>ControlaTusCuentas</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="registro.html">Registrar</a>
+            <a href="resumen.html">Resumen</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Nueva Transacción</h2>
+
+        <form>
+            <label for="tipo">Tipo</label>
+            <select id="tipo" name="tipo">
+                <option value="ingreso">Ingreso</option>
+                <option value="gasto">Gasto</option>
+            </select>
+
+            <label for="monto">Monto</label>
+            <input type="number" id="monto" name="monto" placeholder="Ej: 50000">
+
+            <label for="categoria">Categoría</label>
+            <select id="categoria" name="categoria">
+                <option>Salario</option>
+                <option>Alimentación</option>
+                <option>Transporte</option>
+                <option>Ocio</option>
+                <option>Salud</option>
+                <option>Vivienda</option>
+            </select>
+
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha">
+
+            <button type="submit" class="boton">
+                Guardar Transacción
+            </button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2026 ControlaTusCuentas</p>
+    </footer>
+
+</body>
+</html>
